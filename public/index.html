@@ -27,6 +27,157 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style type="text/css">
+        * {
+            font-family: "Karla", 'sans-serif';
+        }
+
+        .app-container {
+            margin: 0 auto;
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 0.4fr auto;
+            grid-template-rows: auto;
+            align-items: center;
+            justify-content: center;
+            padding: 0.8rem 0.5rem;
+        }
+
+        nav,
+        header>a {
+            display: grid;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline;
+            padding: 20px;
+        }
+
+        ul li a {
+            font-size: 16px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        main,
+        footer {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main>section {
+            padding: 3rem;
+        }
+
+        footer {
+            padding: 20px;
+        }
+
+        footer h4 {
+            margin-top: 0;
+        }
+
+        footer p {
+            margin: 0;
+            padding: 5px 0;
+        }
+
+        footer ul {
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+
+        footer .contact-info {
+            margin-bottom: 2rem;
+        }
+
+        footer ul li {
+            list-style: none;
+            padding: 5px 0;
+        }
+
+        #hero {
+            background-color: #495E57;
+        }
+
+        #hero .title {
+            color: #F4CE14;
+            font-size: 56px;
+            margin-bottom: 0;
+        }
+
+        #hero .sub-heading {
+            color: #fff;
+            font-size: 32px;
+            margin: 10px 0;
+        }
+
+        #hero .content {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 3rem;
+        }
+
+
+        .card.little-lemon-special {
+            /* background-color: #d9d9d9; */
+            box-shadow: 0 0 10px #d9d9d9;
+            border-radius: 10px;
+        }
+
+        .card.little-lemon-special img {
+            border-radius: 10px 10px 0 0;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-align-center {
+            align-items: center;
+        }
+
+        .flex-justify-end {
+            justify-content: flex-end;
+        }
+
+        button {
+            padding: 0.5rem 3em;
+            background-color: #F4CE14;
+            color: #000;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* #specials {
+            display: grid;
+            grid-template-areas: 'heading'
+                'content';
+        } */
+
+        /* #specials .heading {
+            grid-area: heading;
+        }
+
+        #specials .heading h1 {
+            margin: 0 0 2rem;
+        }
+
+        #specials .content {
+            grid-area: content;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        } */
+    </style>
 </head>
 
 <body>
