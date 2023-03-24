@@ -106,24 +106,6 @@
             background-color: #495E57;
         }
 
-        #hero .title {
-            color: #F4CE14;
-            font-size: 56px;
-            margin-bottom: 0;
-        }
-
-        #hero .sub-heading {
-            color: #fff;
-            font-size: 32px;
-            margin: 10px 0;
-        }
-
-        #hero .content {
-            color: #fff;
-            font-size: 20px;
-            margin-bottom: 3rem;
-        }
-
 
         .card.little-lemon-special {
             /* background-color: #d9d9d9; */
@@ -177,6 +159,21 @@
             display: grid;
             grid-template-columns: auto auto auto;
         } */
+        @media (max-width: 700px) {
+            .grid-adjustable-columns {
+                display: grid;
+                grid-auto-flow: row;
+            }
+        }
+
+        @media (min-width: 701px) {
+            .grid-adjustable-columns {
+                width: min(1000px, 75rem);
+                margin: 0 auto;
+                grid-auto-flow: column;
+                gap: 1em;
+            }
+        }
     </style>
 </head>
 

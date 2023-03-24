@@ -1,12 +1,12 @@
 import { Grid, GridItem } from '@chakra-ui/layout';
 import React from 'react';
-import logo from './assets/Logo.svg'
+import logo from '../assets/Logo.svg'
 
 function Footer() {
     return (
         <footer>
             <>
-                <Grid templateColumns={'3.2fr 1.2fr 1.2fr 1.2fr'} gap={50}>
+                <Grid templateColumns={'3.2fr 1.2fr 1.2fr 1.2fr'} gap={50} className='grid-adjustable-columns'>
                     <GridItem>
                         <img src={logo} alt="little lemon" width={150} />
                     </GridItem>
